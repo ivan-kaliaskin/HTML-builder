@@ -13,7 +13,7 @@ fs.readdir('03-files-in-folder/secret-folder', { withFileTypes: true }, (err, fi
                     if (err) {
                         console.log('error', err)
                     } else {
-                        console.log(path.basename(path1, path.extname(path1)) + ' - ' + path.extname(path1) + ' - ' + stats.size)
+                        console.log(path.basename(path1, path.extname(path1)) + ' - ' + path.extname(path1) + ' - ' + stats.size + ' bytes')
                     }
                 })
             }
